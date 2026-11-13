@@ -29,7 +29,7 @@ interface ProductC {
 async function fetchProducts(): Promise<ProductC[]> {
     console.time("fetchProducts");
     const res = await fetch("https://fakestoreapi.com/products", {
-        next: { revalidate: 10 }, // Revalidate every 10 seconds
+        next: { revalidate: 60}, // Revalidate every 10 seconds
         // cache: "force-cache",
         // cache: "no-store", // Disable caching for demonstration purposes
     });
