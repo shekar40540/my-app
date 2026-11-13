@@ -1,0 +1,5 @@
+create next js new project 
+npx create-next-app@latest
+y
+yes -> Enter
+
